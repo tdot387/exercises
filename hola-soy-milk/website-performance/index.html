@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Slowed Down Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Deliberately slow-loading, high-resolution image */
+    .slow-image {
+      background: url('high-res-image.jpg') center/cover no-repeat;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Intentionally delayed JavaScript execution */
+    setTimeout(function() {
+      console.log('Intentionally delayed script executed');
+    }, 3000); // Intentional delay of 3 seconds
+  </script>
+
+  <script>
+    // Third-party widget that intentionally loads slowly
+    function loadSlowWidget() {
+      var slowScript = document.createElement('script');
+      slowScript.src = 'slow-widget.js';
+      document.head.appendChild(slowScript);
+    }
+
+    setTimeout(loadSlowWidget, 5000); // Intentional delay of 5 seconds
+  </script>
+</head>
+<body>
+  <h1>Welcome to Your Slowed Down Website!</h1>
+  <p>This website intentionally includes elements to lower performance and Lighthouse scores for optimization practice.</p>
+
+  <!-- Deliberately slow-loading image -->
+  <div class="slow-image"></div>
+
+  <!-- Add more content as needed -->
+</body>
+</html>
