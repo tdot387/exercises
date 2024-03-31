@@ -90,6 +90,6 @@ Youtube, auszugsweise:
 </body>
 
 Auf den ersten Blick wirkt die Seite sehr unübersichtlich und kompliziert, denn es werden viele divs verwendet. Gleichzeitig ist YouTube
-aber eine risige Website und ohne die große Zahl an divs wird es wohl nicht gehen. Weiters konnte keine nested divs finden, es ist immer
+aber eine risige Website und ohne die große Zahl an divs wird es wohl nicht gehen. Weiters konnte ich keine nested divs finden, es ist immer
 ein anderes Element zwischen zwei divs, was die Überischtlichkeit erheblich verbessert.
 Fazit: auf den ersten Blick unübersichtlich, bei genauerem Hinsehen offenbart sich der rote Faden.
