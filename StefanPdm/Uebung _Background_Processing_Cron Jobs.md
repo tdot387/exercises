@@ -9,7 +9,7 @@ den entsprechenden Cron-Expressions und Befehlen.
 Aufgabe: **Plane ein tägliches Backup eines Verzeichnisses namens /important-data in ein
 Backup-Verzeichnis /backup-folder um 3 Uhr morgens.**
 
-- Cron-Expression: 0 3 \* \* \*
+- Cron-Expression: `0 3 * * *`
 
 - Befehl: usr/bin/rsync -av /important-data /backup-folder
 
@@ -18,7 +18,7 @@ Backup-Verzeichnis /backup-folder um 3 Uhr morgens.**
 Aufgabe: **Rotiere Log-Dateien jeden Sonntag um Mitternacht, um zu verhindern, dass sie zu groß
 werden. Deine Logs befinden sich in /var/log/myapp/.**
 
-- Cron-Expression: 0 0 \* \* 7
+- Cron-Expression: `0 0 * * 7`
 
 - Befehl: /usr/sbin/logrotate /etc/logrotate.d/myapp
 
@@ -26,7 +26,7 @@ werden. Deine Logs befinden sich in /var/log/myapp/.**
 
 Aufgabe: Sende täglich um 9 Uhr morgens E-Mails mit Systemstatusberichten.
 
-- Cron-Expression: 0 9 \* \* \*
+- Cron-Expression: `0 9 * * *`
 
 - Befehl: /usr/bin/mail -s "System Status Report" stefan@domain.de < /path/to/status_report.txt
 
@@ -35,7 +35,7 @@ Aufgabe: Sende täglich um 9 Uhr morgens E-Mails mit Systemstatusberichten.
 Aufgabe: Plane ein Bereinigungsskript, das jeden Samstag um 14 Uhr läuft, um temporäre Dateien aus
 dem Verzeichnis /tmp zu entfernen.
 
-Cron-Expression: 0 14 \* \* 6
+Cron-Expression: `0 14 * * 6`
 
 Befehl: /bin/find /tmp -type f -atime +7 -exec rm {} \\;
 
@@ -44,6 +44,6 @@ Befehl: /bin/find /tmp -type f -atime +7 -exec rm {} \\;
 Aufgabe: Erstelle einen individuellen Cron-Job für eine Aufgabe deiner Wahl. Definiere den Zeitplan
 und den auszuführenden Befehl. Sei kreativ!
 
-Cron-Expression: 0 0 1 Dec \*
+Cron-Expression: `0 0 1 Dec *`
 
 Befehl: /usr/bin/python3 /scriptfolder/my-script.py
