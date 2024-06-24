@@ -1,0 +1,17 @@
+name: Validate filenames
+
+on:
+  pull_request:
+    branches:
+      - "main"
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint Filenames
+        uses: batista/lint-filenames@v2.0.0
+            
