@@ -15,7 +15,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
       - name: Lint Filenames
-        uses: scheduleonce/lint-filenames@v2.0.0
+        uses: kurnev/match-against-glob-action@v1
         with:
-          path: './**/*.*'
-          pattern: '^((?![\\\/:*?\"<>|]).)*$'
+          filenames: './**/*'
+          patterns: './**/^((?![\\\/:*?\"<>|]).)*$'
