@@ -20,9 +20,9 @@ jobs:
           repo: exercises
           pull_number: ${{ github.event.pull_request.number }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
       - name: Lint Filenames
-        uses: kurnev/match-against-glob-action@v1
+        uses: kurnev/match-against-glob-action@v1.0.1
         with:
-          filenames: './**/*'
+          filenames: ${{ join(fromJson(steps.get_files.outputs.data).*.filename) }}
           patterns: './**/^((?![\\\/:*?\"<>|]).)*$'
