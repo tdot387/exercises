@@ -12,8 +12,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
-        uses: actions/checkout@v4
+      - uses: octokit/request-action@v2.x
+        id: get_files
+        with:
+          route: GET /repos/{owner}/{repo}/pulls/{pull_number}/files
+          owner: DevCraft-Academy
+          repo: exercises
+          pull_number: ${{ github.event.pull_request.number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Lint Filenames
         uses: kurnev/match-against-glob-action@v1
         with:
