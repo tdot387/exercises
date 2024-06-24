@@ -15,5 +15,5 @@ jobs:
       - name: Lint Filenames
         uses: batista/lint-filenames@v2.0.0
         with:
-          path: './my-folder'
+          path: './'
           pattern: '^((?![\\\/:*?\"<>|]).)*$'
