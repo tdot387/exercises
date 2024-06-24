@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint Filenames
-        uses: kurnev/match-against-glob-action@v1
+        uses: scheduleonce/lint-filenames@v2.0.0
         with:
-          filenames: './**/*.*'
-          patterns: '^((?![\\\/:*?\"<>|]).)*$'
+          path: './**/*.*'
+          pattern: '^((?![\\\/:*?\"<>|]).)*$'
