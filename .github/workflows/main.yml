@@ -15,5 +15,5 @@ jobs:
       - name: Lint Filenames
         uses: scheduleonce/lint-filenames@v2.0.0
         with:
-          path: '**/*'
+          path: '**/*.*'
           pattern: '^((?![\\\/:*?\"<>|]).)*$'
