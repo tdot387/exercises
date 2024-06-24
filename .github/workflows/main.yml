@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint Filenames
-        uses: csunibo/filenames-linter@v1.4.1
+        uses: scheduleonce/filenames-linter@v2.0.0
         with:
-          path: './'
+          path: './**/*'
           pattern: '^((?![\\\/:*?\"<>|]).)*$'
-          recursive: true
