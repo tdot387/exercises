@@ -1,4 +1,3 @@
-const exp = require('constants');
 const { add, substract, multiply, divide } = require('./calculator');
 
 test('adds 1 + 2 to equal 3', () => {
