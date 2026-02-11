@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deine schnelle Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--- Script ohne defer und mit Timeouts -->
+    <script>
+      setTimeout(() => {
+        console.log('Dieser Timeout dauert vier Sekunden')
+      }, 4000);
+
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        color: #555;
+      }
+
+      .slow-image {
+        display: block;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Willkommen auf der langsamen Website!</h1>
+    <p>
+      Dies ist eine langsame Website. Sie beinhaltet ein
+      relativ großes Gif.
+    </p>
+
+    <!-- Dieses Bild ist etwa drei Megabyte groß -->
+    <img class="slow-image" src="sloth.gif" alt="Langsam ladendes Gif" />
+
+  </body>
+</html>
