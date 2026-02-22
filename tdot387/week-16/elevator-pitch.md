@@ -39,4 +39,4 @@ Mein Schwerpunkt liegt auf dynamischen Formularen, wiederverwendbaren Komponente
 Angular-Frontend-Entwickler für strukturierte, wartbare Web-Apps mit komplexer Fachlogik. Fokus auf dynamische Formulare, wiederverwendbare Komponenten, API-Integration und datengetriebene UIs. Ziel: komplexe Anforderungen in klare, nutzbare Oberflächen übersetzen.
 
 ### 2 Wörter
-Strukturierte Frontends
+Strukturierte Frontends.
