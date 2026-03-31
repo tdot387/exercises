@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Registrierung</h1>
+
+  <form id="registerForm" novalidate>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="text" id="email" name="email" />
+      <div class="error-message" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Passwort</label>
+      <input type="password" id="password" name="password" />
+      <div class="error-message" id="passwordError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefonnummer</label>
+      <input type="text" id="phone" name="phone" placeholder="Muss mit '+' starten" />
+      <div class="error-message" id="phoneError"></div>
+    </div>
+
+    <button type="submit">Absenden</button>
+    <div class="success-message" id="successMessage"></div>
+  </form>
+
+  <p id="success-msg"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
